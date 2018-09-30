@@ -1,0 +1,40 @@
+
+body{
+	font-family: dancing script;
+	background-color: #02010a;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+header{
+	background-color: #5b7989;
+	border-radius: 10px 10px 0px 0px;
+}
+
+header #titulo{
+	color: white;
+	text-shadow: 2px 2px #02010a;
+}
+
+header #menu-principal ul li{
+	color: white;
+	list-style-type: none;
+	padding: 2px;
+}
+
+#inicio a:link{
+	text-decoration-line: none;
+}
+
+.contenedor1 {
+	background: #82c3a6;
+}
+
+.imagen1 {
+	height: 75%;
+	width: 85%;
+	display: block;
+	margin: auto;
+	padding: 1%;
+	border: 5%;
+}

@@ -4,6 +4,7 @@ body{
 	background-color: #02010a;
 	margin-left: 10%;
 	margin-right: 10%;
+	color: white;
 }
 
 header{
@@ -37,4 +38,58 @@ header #menu-principal ul li{
 	margin: auto;
 	padding: 1%;
 	border: 5%;
+}
+
+.contenedor2 {
+	box-sizing: border-box;
+	background: #d5c75f;
+	border: 1px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.imagen2 {
+	height: 75%;
+	width: 85%;
+	display: block;
+	margin: auto;
+	box-shadow: 4px 4px #82c3a6;
+	padding-top: 1%;
+	border: 2px;
+}
+
+.imagen3 {
+	height: 75%;
+	width: 85%;
+	display: block;
+	margin: auto;
+	box-shadow: 4px 4px #82c3a6;
+	padding-top: 1%;
+	border: 2px;
+}
+
+.retratos, .paisaje {
+	text-align: center;
+	text-decoration-line: underline;
+	color: black;
+}
+
+@media (min-width: 900px) {
+	.contenedor{
+		max-width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.retratos, .paisaje{
+		width: 50%
+	}
+}
+
+.paisaje:hover {
+	transform: rotate(10deg);
+}
+
+.retratos:hover {
+	transform: translate(5px, -20px);
 }

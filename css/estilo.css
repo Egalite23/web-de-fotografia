@@ -93,3 +93,50 @@ header #menu-principal ul li{
 .retratos:hover {
 	transform: translate(5px, -20px);
 }
+
+.pie{
+	background-color: #c6d5c5;
+	border-radius: 0px 0px 10px 10px;
+	color: black;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+/*.pie {
+	
+}*/
+
+@media (min-width: 900px) {
+	.pie{
+		/*max-width: 900px;*/
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.pie1, .pie2, .pie3, .pie4 {
+		width: 25%;
+	}
+}
+
+@media (max-width: 899px) {
+	.pie{
+	/*max-width: 900px;*/
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	.pie1, .pie2, .pie3, .pie4 {
+		width: 100%;
+	}
+}
+
+footer .pie1, .pie2, .pie3, .pie4{
+	text-align: center;
+
+}
+
+#titulonegro{
+	font-weight: bold;
+}

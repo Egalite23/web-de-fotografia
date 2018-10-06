@@ -56,7 +56,7 @@ header #menu-principal ul {
 
 @media(min-width: 901px) {
 	.cabecera{
-		max-width: 900px;
+		max-width: none;
 		margin-right: auto;
 		margin-left: auto;
 	}

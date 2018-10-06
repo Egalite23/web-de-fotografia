@@ -24,6 +24,11 @@ header #menu-principal ul li{
 	padding: 2px;
 }
 
+header #menu-principal ul {
+	margin: 0px;
+	padding: 0px;
+}
+
 .lista{
 	display: flex;
 	flex-flow: row wrap;
@@ -32,11 +37,38 @@ header #menu-principal ul li{
 @media(max-width: 900px) {
 	#menu-principal{
 		max-width: 900px;
-		margin-right: auto;
-		margin-left: auto;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 100%;
 	}
 	#inicio, #Paisaje, #Retratos{
 		width: 30%;
+	}
+	#titulo{
+		width: 100%;
+	}
+}
+
+.cont-titulo{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+@media(min-width: 901px) {
+	.cabecera{
+		max-width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#menu-principal{
+		max-width: 900px;
+		margin: auto;
+	}
+	#inicio, #Paisaje, #Retratos{
+		width: 30%;
+	}
+	#titulo, #menu-principal {
+		width: 50%;
 	}
 }
 

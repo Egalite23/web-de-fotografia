@@ -131,7 +131,7 @@ header #menu-principal ul {
 	}
 
 	.retratos, .paisaje{
-		width: 50%
+		width: 50%;
 	}
 }
 
@@ -190,17 +190,7 @@ footer .pie1, .pie2, .pie3, .pie4{
 	font-weight: bold;
 }
 
-
-content .contenedor2 #imagen1, #imagen2, #imagen3 {
-	height: 75%;
-	width: 85%;
-	display: block;
-	margin: auto;
-	padding: 1%;
-	border: 5%;
-}
-
-.contenedor3 {
+.contenedor1-paisaje {
 	box-sizing: border-box;
 	background: #d5c75f;
 	border: 1px;
@@ -208,11 +198,27 @@ content .contenedor2 #imagen1, #imagen2, #imagen3 {
 	flex-flow: row wrap;
 }
 
-content .contenedor3 #imagen4, #imagen5, #imagen6 {
+.imagen1-paisaje, .imagen2-paisaje, .imagen3-paisaje,
+.imagen4-paisaje, .imagen5-paisaje, .imagen6-paisaje {
 	height: 75%;
 	width: 85%;
 	display: block;
 	margin: auto;
-	padding: 1%;
-	border: 5%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 4px 4px black;
+	border: 2px;
+}
+
+@media (min-width: 900px) {
+	.contenedor{
+		max-width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.imagen1-paisaje, .imagen2-paisaje, .imagen3-paisaje,
+	.imagen4-paisaje, .imagen5-paisaje, .imagen6-paisaje {
+		width: 30%;
+	}
 }

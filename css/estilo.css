@@ -56,17 +56,6 @@ body{
 		margin-top: 0%;
 	}
 }
-@-ms-keyframes aparecer {
-	from{
-		margin-top: 150%;
-	}
-	60%{
-		margin-top: -5%;
-	}
-	to{
-		margin-top: 0%;
-	}
-}
 
 header{
 	background-color: #5b7989;
@@ -133,11 +122,14 @@ header #menu-principal ul {
 	}
 }
 
-a{
+a:link, a:visited{
 	color: white;
 }
 
-#inicio a:link{
+body.cuerpo-inicio a.cuerpo-inicio:link,
+body.cuerpo-paisaje a.cuerpo-paisaje:link,
+body.cuerpo-retratos a.cuerpo-retratos:link {
+	color: white;
 	text-decoration-line: none;
 }
 

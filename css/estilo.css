@@ -1,10 +1,71 @@
-
 body{
 	font-family: dancing script;
 	background-color: #02010a;
 	margin-left: 10%;
 	margin-right: 10%;
 	color: white;
+	animation: aparecer 2s ease-out 1;
+	-webkit-animation: aparecer 2s ease-out 1;/*Chrome, Safari, Android, iOs*/
+	-moz-animation: aparecer 2s ease-out 1; /*Firefox*/
+	-o-animation: aparecer 2s ease-out 1; /*Opera*/
+	-ms-animation: aparecer 2s ease-out 1; /*Internet Explorer*/
+}
+
+@keyframes aparecer{
+	from{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	to{
+		margin-top: 0%;
+	}
+}
+
+@-o-keyframes aparecer {
+	from{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	to{
+		margin-top: 0%;
+	}
+}
+@-moz-keyframes aparecer {
+	from{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	to{
+		margin-top: 0%;
+	}
+}
+@-webkit-keyframes aparecer {
+	from{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	to{
+		margin-top: 0%;
+	}
+}
+@-ms-keyframes aparecer {
+	from{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	to{
+		margin-top: 0%;
+	}
 }
 
 header{
@@ -141,10 +202,12 @@ a{
 
 .paisaje:hover {
 	transform: rotate(10deg);
+	transition-duration: 1.5s;
 }
 
 .retratos:hover {
 	transform: translate(5px, -20px);
+	transition-duration: 1.5s;
 }
 
 .pie{
@@ -156,10 +219,6 @@ a{
 	display: flex;
 	flex-flow: row wrap;
 }
-
-/*.pie {
-	
-}*/
 
 @media (min-width: 900px) {
 	.pie{
